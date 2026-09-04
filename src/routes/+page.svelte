@@ -8,4 +8,7 @@
 
 {#each persons as person }
     {person.name} <br>
+    {person.fav_emoji} <br>
+    {person.vibe_emoji} <br>
+    
 {/each}
