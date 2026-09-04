@@ -1,3 +1,25 @@
+<header>
+    <h1>jan jaap en de rest</h1>
+</header>
+
+<ul class="wrapper">
+        {#each persons as person}
+            <li class="profile">
+            <figure class="img-wrapper">
+                <img src="https://fdnd.directus.app/assets/{person.mugshot}" alt="Profile picture"/>
+                
+                <p class="emoji1">{person.fav_emoji}</p>
+                <p class="emoji2">{person.vibe_emoji}</p>
+            </figure>
+        
+                
+                <p>{person.name}</p>
+                <p>{person.id}</p>
+            </li>
+        {/each}
+    </ul>
+
+
 <style>
 
     * {
