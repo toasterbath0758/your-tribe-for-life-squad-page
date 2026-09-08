@@ -1,64 +1,131 @@
-<section class="detail-page">
+<script>
+	let { data } = $props();
 
+	let person = $derived(data.person);
+</script>
 
+{#if person}
 
-	<article class="person-card">
-		<img
-			src="/images/profielfoto.jpg"
-			alt="Profielfoto"
-		/>
+	<section class="detail-page">
 
-		<h1>Naam</h1>
-	</article>
+		<article class="polaroid">
 
-</section>
+		
+			<img
+				class="tape"
+				src="/images/tape (2).png"
+				alt=""
+				aria-hidden="true"
+			/>
+
+			<!-- Foto van persoon uit Directus -->
+			{#if person.mugshot}
+				<img
+					class="person-photo"
+					src={`https://fdnd.directus.app/assets/${person.mugshot}`}
+					alt={`Foto van ${person.name}`}
+				/>
+			{/if}
+
+			<div class="person-info">
+
+				<h1>{person.name}</h1>
+
+				{#if person.bio}
+					<p>{person.bio}</p>
+				{/if}
+
+				<div class="favorite-color">
+					<p>favoriete kleur</p>
+
+					<span
+						class="color-block"
+						style={`background-color: ${person.fav_color}`}
+					></span>
+				</div>
+
+			</div>
+
+		</article>
+
+	</section>
+
+{:else}
+
+	<p>Persoon niet gevonden.</p>
+
+{/if}
 
 <style>
+
+body{
+
+	margin: 0;
+}
 	.detail-page {
 		min-height: 100vh;
-
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+        display: flex;
 		justify-content: center;
-
-		background-color: white;
-		padding: 2rem;
-	}
-
-
-	.person-card {
-		width: 80%;
-		max-width: 600px;
-		min-height: 600px;
-
-		background-color: #f6e9d9;
-
-		border: 4px solid black;
-		border-radius: 8px;
-
-		display: flex;
-		flex-direction: column;
 		align-items: center;
+		padding: 4rem 1rem;
+        background-image: url('/images/pinboard.jpg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
 
-		padding: 5rem 2rem 2rem;
-	}
+		.polaroid {
+			position: relative;
+            width: min(80vw, 340px);
+            background-color: white;
+            padding: 1rem 1rem 2rem;
 
-	/* Profielfoto */
-	.person-card img {
-		width: 200px;
-		height: 200px;
+			.tape {
+				position: absolute;
+                width: 90px;
+				top: -35px;
+				left: 40%;
+                z-index: 2;
+			}
 
-		object-fit: cover;
+			.person-photo {
+				width: 100%;
+				aspect-ratio: 1 / 1;
+                display: block;
+                object-fit: cover;
+                background-color: black;
+			}
 
-		border-radius: 8px;
-	}
+			.person-info {
+				margin-top: 1rem;
 
-	/* Naam */
-	.person-card h1 {
-		margin-top: 2rem;
+				h1 {
+					margin: 0 0 1rem;
+                    font-size: 1rem;
+					font-weight: 400;
+				}
 
-		font-size: 2.5rem;
-		font-weight: 400;
+				 p {
+					margin: 0 0 1rem;
+					line-height: 1.5;
+				}
+
+				.favorite-color {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+
+					p {
+						margin: 0;
+					}
+
+					.color-block {
+						display: inline-block;
+
+						width: 22px;
+						height: 22px;
+					}
+				}
+			}
+		}
 	}
 </style>
