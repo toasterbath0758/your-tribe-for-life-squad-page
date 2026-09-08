@@ -29,34 +29,30 @@
 
 			<div class="person-info">
 
-		background-color: white;
-		padding: 2rem;
-	}
+				<h1>{person.name}</h1>
 
+				{#if person.bio}
+					<p>{person.bio}</p>
+				{/if}
 
-	.person-card {
-		width: 80%;
-		max-width: 600px;
-		min-height: 600px;
+				<div class="favorite-color">
+					<p>favoriete kleur</p>
 
-		background-color: #f6e9d9;
+					<span
+						class="color-block"
+						style={`background-color: ${person.fav_color}`}
+					></span>
+				</div>
 
-		border: 4px solid black;
-		border-radius: 8px;
+			</div>
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		</article>
 
-		padding: 5rem 2rem 2rem;
-	}
+	</section>
 
-	/* Profielfoto */
-	.person-card img {
-		width: 200px;
-		height: 200px;
+{:else}
 
-		object-fit: cover;
+	<p>Persoon niet gevonden.</p>
 
 		border-radius: 8px;
 	}
