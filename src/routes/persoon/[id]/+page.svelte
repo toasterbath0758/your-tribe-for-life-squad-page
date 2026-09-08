@@ -8,14 +8,24 @@
 
 	<section class="detail-page">
 
-		<h1>Naam</h1>
-	</article>
+		<article class="polaroid">
 
-</section>
+		
+			<img
+				class="tape"
+				src="/images/tape (2).png"
+				alt=""
+				aria-hidden="true"
+			/>
 
-<style>
-	.detail-page {
-		min-height: 100vh;
+			<!-- Foto van persoon uit Directus -->
+			{#if person.mugshot}
+				<img
+					class="person-photo"
+					src={`https://fdnd.directus.app/assets/${person.mugshot}`}
+					alt={`Foto van ${person.name}`}
+				/>
+			{/if}
 
 			<div class="person-info">
 
