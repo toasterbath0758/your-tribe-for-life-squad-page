@@ -41,19 +41,37 @@
             /* background-image: url("/assets/pinboard.jpg"); */
         }
 
+        ul.wrapper {   
+            /* layout voor telefoon          */
+            padding: 10em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        
+            /* layout voor tablet */
+            @media (min-width: 570px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 10em 1em 1em 1em;
+            }
 
-        ul.wrapper {
+            /* layout voor tablet/kleine laptop */
+            @media (min-width: 1000px){
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            /* layout voor pc (een scroll carousel) */
+            @media (min-width: 1300px){
             display: flex;
             flex-direction: row;
-            align-content: center;
-            margin: 5em;
-
-            overflow-x: scroll;
-            
-            scrollbar-color: orange lightgreen;
+            overflow-x: auto;
+            scrollbar-color: green lightgreen;
             scrollbar-width: auto;
             
-            gap: 20px;
+            padding: 10em;
+            
+            }
+            
         }
 
         /* hover state van de profile */
