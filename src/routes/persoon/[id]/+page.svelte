@@ -63,5 +63,6 @@
 
 		font-size: 2.5rem;
 		font-weight: 400;
+        background-image: url('/images/pinboard.jpg');
 	}
 </style>
