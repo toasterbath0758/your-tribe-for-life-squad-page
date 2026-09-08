@@ -92,28 +92,25 @@
             scale: 120%;
             transform: rotate(5deg);
             z-index: 100;
-        
         }
 
         li.profile {
             display: flex;
             flex-direction: column;
+            box-shadow: 0 0 50px 0px black;
+            align-self: center;
+            justify-self: center;
             padding: 1em;
-            margin: 5em;
             gap: 0.5em;
-            width: fit-content;
+            
             height: 300px;
             background: ivory;
 
             /* animation van de hover */
             transition: scale 0.1s ease-in, rotate 0.1s ease-in-out;
         
-
             .img-wrapper {
                 position: relative;
-                width: 200px;
-                height: 200px;
-                
 
                 img {
                     width: 200px;
