@@ -8,8 +8,21 @@
             <figure class="img-wrapper">
                 <img src="https://fdnd.directus.app/assets/{person.mugshot}" alt="Profile picture"/>
                 
-                <p class="emoji1">{person.fav_emoji}</p>
+
+                {#if person.fav_emoji && person.fav_emoji.length > 10}
+
+                <p hidden class="emoji1">{person.fav_emoji}</p>
+
+                {:else}
+
+                <p  class="emoji1">{person.fav_emoji}</p>
+                {/if}
+                
+                
+                
+                
                 <p class="emoji2">{person.vibe_emoji}</p>
+
             </figure>
         
                 
