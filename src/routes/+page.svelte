@@ -1,6 +1,5 @@
-<header>
-    <h1>jan jaap en de rest</h1>
-</header>
+
+
 
 <ul class="wrapper">
         {#each persons as person}
@@ -42,16 +41,15 @@
         color: darkslategrey;
 
         /* sidebar */
-        /* header {
-        } */
 
         }
-
-            /* applies to <body> */
+        /* applies to <body> */
         :global(body) {
+            margin: 0;
             width: 100vw;
             background: lightgreen;
-            /* background-image: url("/assets/pinboard.jpg"); */
+            
+            /* background-image: url("$lib/assets/pinboard.jpg"); */
         }
 
         ul.wrapper {   
