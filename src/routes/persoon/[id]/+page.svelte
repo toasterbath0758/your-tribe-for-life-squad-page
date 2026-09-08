@@ -1,12 +1,12 @@
-<section class="detail-page">
+<script>
+	let { data } = $props();
 
+	let person = $derived(data.person);
+</script>
 
+{#if person}
 
-	<article class="person-card">
-		<img
-			src="/images/profielfoto.jpg"
-			alt="Profielfoto"
-		/>
+	<section class="detail-page">
 
 		<h1>Naam</h1>
 	</article>
@@ -17,10 +17,7 @@
 	.detail-page {
 		min-height: 100vh;
 
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+			<div class="person-info">
 
 		background-color: white;
 		padding: 2rem;
