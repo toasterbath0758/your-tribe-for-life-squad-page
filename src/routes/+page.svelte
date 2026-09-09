@@ -9,8 +9,14 @@
         {#each persons as person}
             <li class="profile">
             <figure class="img-wrapper">
+
+                {#if person.mugshot === null}
+                <img src="src/lib/assets/orca.jpg" alt="">
+                
+                {:else}
                 <img src="https://fdnd.directus.app/assets/{person.mugshot}" alt="Profile picture"/>
                 
+                {/if}
 
                 {#if person.fav_emoji && person.fav_emoji.length > 10}
 
@@ -57,7 +63,7 @@
         /* background-image: url("$lib/assets/pinboard.jpg"); */
     }
     ul.wrapper {   
-        /* layout voor telefoon          */
+        /* layout voor telefoon */
         padding: 10em;
         display: flex;
         flex-direction: column;
@@ -103,6 +109,7 @@
         
         height: 300px;
         background: ivory;
+
         /* animation van de hover */
         transition: scale 0.1s ease-in, rotate 0.1s ease-in-out;
     
