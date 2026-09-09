@@ -19,9 +19,9 @@
 <p>></p>
 </button> -->
 
-<section class="sidebar">
+<!-- <section class="sidebar">
 	<p>hallo</p>
-</section>
+</section> -->
 
 
 
