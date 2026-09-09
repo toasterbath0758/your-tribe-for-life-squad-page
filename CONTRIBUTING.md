@@ -1,15 +1,18 @@
 # Afspraken over samenwerking
-Link naar team canvas: https://www.figma.com/design/M5lTKBxaHeL06wMbOeBpRG/Team-canvas?node-id=0-1&p=f&t=bWDPOOGHg7aELWtm-0
+Link naar team canvas: <img width="1404" height="995" alt="image" src="https://github.com/user-attachments/assets/4d0cb35a-5906-4aff-9092-ba237d464ff8" />
 
-Hier zijn wat van de afspraken die we hebben gemaakt
 
-netjes met elkaar omgaan
+# Hier zijn wat van de afspraken die we hebben gemaakt
 
-Altijd er zijn met teamopdrachten en als je echt niet kan komen meldt je dit van te voren in teams
+- wij werken lief samen :)
 
-iedere dag pushen als je nieuwe code schrijft 
+- wij gaan netjes met elkaar om
 
-Elke woensdag even afspreken om elkaars werk laten zien, voortgang te bespreken en kijken of we onze afspraken en doelen halen.
+- altijd er zijn met teamopdrachten en als je echt niet kan komen meldt je dit van te voren in teams
 
-Communicatie is key 
+- iedere dag pushen als je nieuwe code schrijft 
+
+- elke woensdag even afspreken om elkaars werk laten zien, voortgang te bespreken en kijken of we onze afspraken en doelen halen.
+
+- communicatie is key 
 
