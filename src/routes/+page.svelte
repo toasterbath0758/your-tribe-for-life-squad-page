@@ -52,20 +52,20 @@
         color: darkslategrey;
     }
 
-
-
     /* applies to <body> */
     :global(body) {
+        display: grid;
         margin: 0;
         width: 100vw;
+        /* justify-self: center; */
         background: lightgreen;
-        
         /* background-image: url("$lib/assets/pinboard.jpg"); */
     }
+
     ul.wrapper {   
         /* layout voor telefoon */
-        padding: 10em;
         display: flex;
+        padding: 10em 0 0 0;
         flex-direction: column;
         gap: 1em;
     
@@ -81,17 +81,16 @@
         }
         /* layout voor pc (een scroll carousel) */
         @media (min-width: 1300px){
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        scrollbar-color: green lightgreen;
-        scrollbar-width: auto;
-        
-        padding: 10em;
-        
-        }
-        
+            display: flex;
+            padding: 10em;
+
+            flex-direction: row;
+            overflow-x: scroll;
+            scrollbar-color: green lightgreen;
+            scrollbar-width: auto;
+        }  
     }
+    
     /* hover state van de profile */
     li.profile:hover {
         scale: 120%;
@@ -100,12 +99,14 @@
     }
     li.profile {
         display: flex;
-        flex-direction: column;
-        box-shadow: 0 0 50px 0px black;
         align-self: center;
         justify-self: center;
         padding: 1em;
-        gap: 0.5em;
+        /* gap: 0.5em; */
+
+        flex-shrink: 0;
+        flex-direction: column;
+        box-shadow: 0 0 50px 0px black;
         
         height: 300px;
         background: ivory;

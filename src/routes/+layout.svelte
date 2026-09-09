@@ -67,10 +67,10 @@
 
     header {
 		padding: 1em;
-        display: flex;
+        /* display: flex; */
         z-index: 10;
 		width: 100vw;
-
+		
         background: green;
 
 		h1 {
