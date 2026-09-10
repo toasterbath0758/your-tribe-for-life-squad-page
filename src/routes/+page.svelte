@@ -140,6 +140,23 @@
         }
     }
 
+    /* @media (prefers-color-scheme: dark) {
+
+    	ul.wrapper {
+			background: black;
+		}
+
+		li.profile {
+			background: black;
+			color: white;
+            box-shadow: 0 0 50px 0px lightsteelblue;
+		}
+
+        a {
+            color: white;
+        }
+    } */
+
 
 
 </style>

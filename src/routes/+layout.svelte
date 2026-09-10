@@ -38,6 +38,24 @@
 	    color: darkslategrey;
 	}
 
+
+
+	header {
+		padding: 1em;
+    	z-index: 10;
+		width: 100vw;
+    	background: green;
+		color: lightgreen;
+    }
+
+	/* @media (prefers-color-scheme: dark) {
+
+		header {
+    		background: black;
+			color: white;
+      }
+	} */
+
 	/* sidebar */
     /* button.sidebar-button {
         display: flex;
@@ -67,17 +85,6 @@
 
 	} */
 
-    header {
-		padding: 1em;
-        /* display: flex; */
-        z-index: 10;
-		width: 100vw;
-		
-        background: green;
 
-		h1 {
-			color: lightgreen;
-		}
-    }
 
 </style>
