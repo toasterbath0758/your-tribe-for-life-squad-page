@@ -7,7 +7,7 @@
 
 <ul class="wrapper">
         {#each persons as person}
-            <li class="profile">
+            <li tabindex="0" class="profile" alt="{person.name}">
             <figure class="img-wrapper">
 
                 {#if person.mugshot === null}
