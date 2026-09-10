@@ -11,7 +11,7 @@
             <figure class="img-wrapper">
 
                 {#if person.mugshot === null}
-                <img src="src/lib/assets/orca.jpg" alt="">
+                <img src="src/lib/assets/orca.jpg" alt="Oeps geen foto gevonden, orca met sigaret">
                 
                 {:else}
                 <img src="https://fdnd.directus.app/assets/{person.mugshot}" alt="Profile picture"/>
