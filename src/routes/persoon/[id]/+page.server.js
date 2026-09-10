@@ -1,6 +1,6 @@
 export async function load({ fetch, params }) {
 	const res = await fetch(
-		`https://fdnd.directus.app/items/person/${params.id}?fields=id,name,mugshot,bio,fav_color`
+		`https://fdnd.directus.app/items/person/${params.id}?fields=id,name,mugshot,fav_color,fav_emoji,vibe_emoji`
 	);
 
 	const dataPerson = await res.json();
