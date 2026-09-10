@@ -13,7 +13,8 @@
 </svelte:head>
 
 <header>
-    <h1>jan jaap en de rest</h1>
+    <h1 tabindex="0">jan jaap en de rest</h1>
+	<h2 tabindex="0">FDND profiles squad jaar 2 2026</h2>
 </header>
 
 <!-- <button class="sidebar-button">
