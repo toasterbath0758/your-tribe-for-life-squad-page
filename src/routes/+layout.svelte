@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>squad-page-jjedr</title>
 </svelte:head>
 
 <header>
