@@ -9,32 +9,36 @@
 
 		<article class="polaroid">
 
-			{#if person.fav_emoji}
-				<span class="emoji emoji-left" aria-hidden="true">
-					{person.fav_emoji}
-				</span>
-			{/if}
-
-			{#if person.vibe_emoji}
-				<span class="emoji emoji-right" aria-hidden="true">
-					{person.vibe_emoji}
-				</span>
-			{/if}
-
 			<img
 				class="tape"
 				src="/images/tape (2).png"
 				alt=""
-				aria-hidden="true"
+				
 			/>
 
-			{#if person.mugshot}
-				<img
-					class="person-photo"
-					src={`https://fdnd.directus.app/assets/${person.mugshot}`}
-					alt={`Foto van ${person.name}`}
-				/>
-			{/if}
+			<div class="photo-container">
+
+				{#if person.mugshot}
+					<img
+						class="person-photo"
+						src={`https://fdnd.directus.app/assets/${person.mugshot}`}
+						alt={`Foto van ${person.name}`}
+					/>
+				{/if}
+
+				{#if person.fav_emoji}
+					<span class="emoji emoji-left">
+						{person.fav_emoji}
+					</span>
+				{/if}
+
+				{#if person.vibe_emoji}
+					<span class="emoji emoji-right">
+						{person.vibe_emoji}
+					</span>
+				{/if}
+
+			</div>
 
 			<div class="person-info">
 
@@ -50,7 +54,7 @@
 					<span
 						class="color-block"
 						style={`background-color: ${person.fav_color}`}
-						aria-label={`Favoriete kleur van ${person.name}`}
+						
 					></span>
 				</div>
 
@@ -69,6 +73,7 @@
 <style>
 	:global(body) {
 		margin: 0;
+		
 	}
 
 	.detail-page {
@@ -77,7 +82,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 4rem 1rem;
-
 		background-image: url('/images/pinboard.jpg');
 		background-size: cover;
 		background-position: center;
@@ -85,55 +89,48 @@
 
 		.polaroid {
 			position: relative;
-
 			width: min(80vw, 340px);
-
-			background-color: white;
-
-			padding: 1rem 1rem 2rem;
+            background-color: white;
+            padding: 1rem 1rem 2rem;
 
 			.tape {
 				position: absolute;
-
-				width: 90px;
-
-				top: -35px;
+                width: 90px;
+                top: -35px;
 				left: 40%;
-
-				z-index: 2;
+                z-index: 4;
 			}
 
-			.emoji {
-				position: absolute;
+			.photo-container {
+				position: relative;
 
-				font-size: 3rem;
+				.person-photo {
+					width: 100%;
+					aspect-ratio: 1 / 1;
+                    display: block;
+                    object-fit: cover;
+					background-color: black;
+				}
 
-				z-index: 3;
-			}
+				.emoji {
+					position: absolute;
+                    font-size: 6rem;
+					z-index: 3;
+				}
 
-			.emoji-left {
-				top: -30px;
-				left: -30px;
+				.emoji-left {
+					top: -56px;
+					left: -55px;
 
-				transform: rotate(-10deg);
-			}
+					transform: rotate(-10deg);
+				}
 
-			.emoji-right {
-				right: -30px;
-				bottom: -25px;
+				.emoji-right {
+					right: -50px;
+					bottom: -27px;
 
-				transform: rotate(10deg);
-			}
-
-			.person-photo {
-				width: 100%;
-				aspect-ratio: 1 / 1;
-
-				display: block;
-
-				object-fit: cover;
-
-				background-color: black;
+					transform: rotate(10deg);
+				}
 			}
 
 			.person-info {
@@ -145,14 +142,12 @@
 					margin: 0 0 1rem;
 
 					font-family: "Comic Sans MS", cursive;
-
 					font-size: 1.5rem;
 					font-weight: 400;
 				}
 
 				p {
 					margin: 0 0 1rem;
-
 					line-height: 1.5;
 				}
 
