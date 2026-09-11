@@ -2,9 +2,6 @@
 	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
-
-
-
 </script>
 
 <svelte:head>
@@ -35,7 +32,6 @@
 		margin: 0;
 	    padding: 0;
 	    font-family: cooper;
-	    color: darkslategrey;
 	}
 
 
@@ -45,7 +41,15 @@
     	z-index: 10;
 		width: 100vw;
     	background: green;
-		color: lightgreen;
+		
+
+			h1 {
+				color: lightgreen;
+			}
+
+			h2 {
+				color: lightgreen;
+			}
     }
 
 	/* @media (prefers-color-scheme: dark) {
