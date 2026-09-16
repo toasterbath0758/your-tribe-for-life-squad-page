@@ -16,6 +16,20 @@ Wanneer je op een Polaroid klikt, word je doorgestuurd naar de detailpagina. Hie
 
 
 ### screenshots van het ontwerp/site
+laptop/pc min-width 1300 <br>
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/a27e20d5-e933-49ff-9317-ca2c1b67ce8d" />
+
+kleine laptop/tablet min-width 1000 <br>
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0606484b-35d1-4ad2-b3ce-9cd6d1383ae1" />
+
+tablet min-width 570 <br>
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/3e86e9ad-988f-4620-b8ef-e7e9ffe66a09" />
+
+telefoon <br>
+<img width="100" alt="image" src="https://github.com/user-attachments/assets/390709ae-ca54-463e-a8f2-01a58b6eae35" />
+
+
+
 
 
 
