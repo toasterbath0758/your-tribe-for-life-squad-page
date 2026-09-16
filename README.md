@@ -32,6 +32,56 @@ telefoon <br>
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/26a4dc58-12d8-4fd0-8e53-35b04623ce2f" />
 
 
+## kenmerken van de site
+
+
+### home pagina
+
+- **Dynamische data met Svelte**  
+  Met `{#each persons as person}` worden alle personen uit de Directus data gehaald.
+
+- **Conditionele rendering**  
+  Met `{#if}` controleren we of een persoon een mugshot of favoriete emoji heeft. Als er geen mugshot beschikbaar is, wordt een fallback     afbeelding getoond.
+
+- **Dynamische detailpagina's**  
+  Elk profiel linkt met het persoonlijke ID naar een eigen detailpagina:
+  `<a href={\`/persoon/${person.id}\`}>`
+
+- **Responsive layout**  
+  Met media queries verandert de layout van 1 kolom 
+
+- **Interactieve profielkaarten**  
+  Met `:hover`, `scale`, `rotate` en `transition` worden de Polaroids vergroot en licht gedraaid wanneer je eroverheen hovert.
+
+- **Emoji's positioneren**  
+  De favoriete emoji's worden met `position: absolute` over de foto's geplaatst.
+
+- **Responsive afbeeldingen**  
+  Met `object-fit: cover` blijven de mugshots netjes binnen het vaste formaat van de Polaroids.
+
+
+
+
+
+### Detailpagina
+
+- **Dynamische persoonsgegevens**  
+  De detailpagina ontvangt één `person` en toont hiervan de naam, mugshot, bio, favoriete emoji's en favoriete kleur.
+
+- **Dynamische favoriete kleur**  
+  De favoriete kleur uit Directus wordt direct gebruikt als CSS-kleur met:
+  `style={\`background-color: ${person.fav_color}\`}`.
+
+- **Emoji's over de foto**  
+  De emoji's worden met `position: absolute` over de mugshot geplaatst over de foto. de foto heeft `position: relative`, waardoor de emoji's ten opzichte van de foto gepositioneerd worden.
+
+- **Polaroid ontwerp**  
+  Met CSS is de detailpagina vormgegeven als een Polaroid. Het plakband wordt met `position: absolute` over de bovenkant van de kaart geplaatst.
+
+- **Fallback**  
+  Als er geen persoon gevonden wordt, toont de pagina `Persoon niet gevonden`.
+
+
 
 
 
