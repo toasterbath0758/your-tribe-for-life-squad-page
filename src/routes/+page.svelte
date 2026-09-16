@@ -35,7 +35,7 @@
                 
                 <p>{person.name}</p>
                 <p>{person.id}</p>
-                <a href="">--></a>
+              	<a href={`/persoon/${person.id}`}>--></a>
             </li>
 
             

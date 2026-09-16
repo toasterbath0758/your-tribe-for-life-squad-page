@@ -82,10 +82,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 4rem 1rem;
-		background-image: url('/images/pinboard.jpg');
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+	    background: lightgreen;
 
 		.polaroid {
 			position: relative;
@@ -96,7 +93,7 @@
 			.tape {
 				position: absolute;
                 width: 90px;
-                top: -35px;
+                top: -45px;
 				left: 40%;
                 z-index: 4;
 			}
