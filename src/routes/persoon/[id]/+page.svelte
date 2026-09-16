@@ -60,6 +60,8 @@
 
 			</div>
 
+			<a href="/">--></a>
+
 		</article>
 
 	</section>
@@ -97,6 +99,17 @@
 				left: 40%;
                 z-index: 4;
 			}
+           
+		    a{
+			    margin-top: 50px;
+				color:  black;
+				
+				font-family:  cooper ;
+				font-size: 30px;
+
+		    }
+
+
 
 			.photo-container {
 				position: relative;
@@ -138,7 +151,7 @@
 				h1 {
 					margin: 0 0 1rem;
 
-					font-family: "Comic Sans MS", cursive;
+					font-family: cooper;
 					font-size: 1.5rem;
 					font-weight: 400;
 				}
@@ -146,6 +159,7 @@
 				p {
 					margin: 0 0 1rem;
 					line-height: 1.5;
+					font-family: cooper;
 				}
 
 				.favorite-color {

@@ -68,7 +68,7 @@
         padding: 10em 0 0 0;
         flex-direction: column;
         gap: 1em;
-    
+        
         /* layout voor tablet */
         @media (min-width: 570px){
             display: grid;
@@ -88,7 +88,9 @@
             overflow-x: scroll;
             scrollbar-color: green lightgreen;
             scrollbar-width: auto;
-        }  
+        } 
+        
+        a{font-size: 30px;}
     }
     
     /* hover state van de profile */
