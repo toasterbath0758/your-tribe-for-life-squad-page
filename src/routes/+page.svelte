@@ -111,6 +111,12 @@
         height: 300px;
         background: ivory;
 
+        a {
+            justify-self: end;
+            place-self: end;
+            text-decoration: none;
+        }
+
         /* animation van de hover */
         transition: scale 0.1s ease-in, rotate 0.1s ease-in-out;
     
