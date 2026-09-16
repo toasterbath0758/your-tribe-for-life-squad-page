@@ -28,6 +28,9 @@ tablet min-width 570 <br>
 telefoon <br>
 <img width="100" alt="image" src="https://github.com/user-attachments/assets/390709ae-ca54-463e-a8f2-01a58b6eae35" />
 
+### mockups
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/26a4dc58-12d8-4fd0-8e53-35b04623ce2f" />
+
 
 
 
