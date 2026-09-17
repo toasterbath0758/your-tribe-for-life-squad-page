@@ -16,3 +16,10 @@ Link naar team canvas: <img width="1404" height="995" alt="image" src="https://g
 
 - communicatie is key 
 
+Welke code conventies hebben we toegepast?
+wij hebben toegepast:
+- kebab-case voor css
+- camelCase voor js
+- nesting van classes
+- code niet in het engels
+- met tabs gewerkt
