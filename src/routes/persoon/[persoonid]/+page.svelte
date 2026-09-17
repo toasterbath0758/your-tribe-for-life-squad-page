@@ -17,16 +17,17 @@
 			/>
 
 			<div class="photo-container">
+{#if person.mugshot}
+	<img
+		class="person-photo"
+		src={`https://fdnd.directus.app/assets/${person.mugshot}?width=680`}
+		
+		width="340"
+		height="340"
+	/>
+{/if}	
 
-				{#if person.mugshot}
-					<img
-						class="person-photo"
-						src={`https://fdnd.directus.app/assets/${person.mugshot}`}
-						
-					/>
-				{/if}
-
-				{#if person.fav_emoji}
+{#if person.fav_emoji}
 					<span class="emoji emoji-left">
 						{person.fav_emoji}
 					</span>
