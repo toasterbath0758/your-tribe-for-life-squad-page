@@ -22,7 +22,7 @@
 					<img
 						class="person-photo"
 						src={`https://fdnd.directus.app/assets/${person.mugshot}`}
-						alt={`Foto van ${person.name}`}
+						
 					/>
 				{/if}
 
@@ -50,7 +50,7 @@
 
 				<div class="favorite-color">
 					<p>favoriete kleur</p>
-
+         
 					<span
 						class="color-block"
 						style={`background-color: ${person.fav_color}`}
