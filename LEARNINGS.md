@@ -23,9 +23,9 @@
 - sven: kom vaker naar de les
 - bronx:
 Waar ben je trots op?
-kevin:	op dat we met niet superveel coordinatie toch het project hebben kunnen afronden
-sven:	op kevin
-bronx:	
+- kevin:	op dat we met niet superveel coordinatie toch het project hebben kunnen afronden
+- sven:	op kevin
+- bronx:	
 
 
 4. Verwerking Verwerk de ontvangen en gegeven feedback in je LEARNINGS.md
