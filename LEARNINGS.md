@@ -22,7 +22,7 @@
 - kevin:	we hadden meer daily stand-ups moeten doen
 - sven: kom vaker naar de les
 - bronx:
-Waar ben je trots op?
+### Waar ben je trots op?
 - kevin:	op dat we met niet superveel coordinatie toch het project hebben kunnen afronden
 - sven:	op kevin
 - bronx:	
