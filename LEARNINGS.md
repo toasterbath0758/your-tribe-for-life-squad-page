@@ -11,21 +11,28 @@
 
 ## 2. Individuele feedback Geef feedback aan teamleden
 ### Hoe heb je mij als teamlid ervaren
-- kevin:	fantastisch
+- kevin:  fantastisch
 - sven: druk met trainen maar uiteindelijk wel het geplande werk af dus top
 - bronx:	werkt goed samen en luistert goed
 ### Welke tips heb je voor mij
-- kevin:	
+- kevin:  beter in de issues documenteren waar je mee bezig bent.
 - sven:	kom vaker naar de les
-- bronx:	
+- bronx:	niet teveel werk op je vork nemen een 
 ### Wat zou ik moeten veranderen om prettiger samen te werken
 - kevin:	we hadden meer daily stand-ups moeten doen
 - sven: kom vaker naar de les
-- bronx:
+- bronx: meer daily standups
 ### Waar ben je trots op?
 - kevin:	op dat we met niet superveel coordinatie toch het project hebben kunnen afronden
 - sven:	op kevin
-- bronx:	
+- bronx: -
 
 
-4. Verwerking Verwerk de ontvangen en gegeven feedback in je LEARNINGS.md
+Verwerking:
+Verwerk de ontvangen en gegeven feedback in je LEARNINGS.md
+wat we hebben geleerd van onze samenwerking:
+- beter communiceren met elkaar.
+- beter documenteren in issues waar je mee bezig bent.
+- meer daily standups zodat we beter weten waar iedereen mee bezig is.
+
+   
